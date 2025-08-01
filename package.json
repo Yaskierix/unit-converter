@@ -6,7 +6,6 @@
     "dev": "vite",
     "build": "vite build && copy manifest.json dist\\ && copy icon.png dist\\",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "vite": "latest"
