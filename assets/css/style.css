@@ -23,18 +23,24 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%);
-  padding: 30px 55px;
+  transform: translate(-50%, -50%);
   max-width: 550px;
   width: 100%;
 }
-.layout .content h1 {
+.layout .content .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 55px;
+}
+.layout .content .input-container h1 {
   color: #fff;
   font-size: 28px;
   line-height: 38px;
   text-align: center;
 }
-.layout .content input {
+.layout .content .input-container input {
   margin-top: 40px;
   border-radius: 5px;
   border: 2px solid #13b381;
@@ -45,4 +51,37 @@ body {
   color: #fff;
   text-align: center;
   font-family: monospace;
+  margin-bottom: 30px;
+  outline: none;
+}
+.layout .content .input-container button {
+  border-radius: 5px;
+  text-align: center;
+  background: #fff;
+  border: none;
+  max-width: 115px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+.layout .content .units-container {
+  width: 100%;
+  background-color: #1f2937;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.layout .content .units-container .unit {
+  background-color: #273549;
+  text-align: center;
+  padding: 30px 20px;
+}
+.layout .content .units-container .unit h2 {
+  color: #13b381;
+  margin-bottom: 20px;
+}
+.layout .content .units-container .unit p {
+  color: #fff;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 $color1: #059669;
-$color2:#13b381;
+$color2: #13b381;
 $color3: #fff;
+$color4: #1f2937;
+$color5: #273549;
 
 .layout {
   background-color: #1c1c1c;
@@ -19,7 +21,7 @@ $color3: #fff;
   height: 100vh;
   position: relative;
   .content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -27,27 +29,66 @@ $color3: #fff;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%);
-    padding: 30px 55px;
+    transform: translate(-50%, -50%);
     max-width: 550px;
     width: 100%;
-    h1 {
-      color: $color3;
-      font-size:28px;
-      line-height:38px;
-      text-align: center;
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 55px;
+      h1 {
+        color: $color3;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+      }
+      input {
+        margin-top: 40px;
+        border-radius: 5px;
+        border: 2px solid $color2;
+        width: 115px;
+        height: 85px;
+        font-size: 58px;
+        background: $color1;
+        color: $color3;
+        text-align: center;
+        font-family: monospace;
+        margin-bottom: 30px;
+        outline: none;
+      }
+      button {
+        border-radius: 5px;
+        text-align: center;
+        background: $color3;
+        border: none;
+        max-width: 115px;
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 18px;
+      }
     }
-    input{
-      margin-top:40px;
-      border-radius:5px;
-      border:2px solid $color2;
-      width: 115px;
-      height: 85px;
-      font-size:58px;
-      background: $color1;
-      color:$color3;
-      text-align: center;
-      font-family: monospace;
+    .units-container {
+      width: 100%;
+      background-color: $color4;
+      padding: 35px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .unit {
+        background-color: $color5;
+        text-align: center;
+        padding: 30px 20px;
+        h2 {
+          color: $color2;
+          margin-bottom: 20px;
+        }
+        p{
+          color:$color3;
+          font-size:18px;
+        }
+      }
     }
   }
 }
