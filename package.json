@@ -1,6 +1,6 @@
 {
-  "name": "lead-chrome-extension",
-  "description": "Lead or URL chrome extension that can copy current window URL to the list and save it in local storage",
+  "name": "unit-conversion-calculator",
+  "description": "Simple Metric/Imperial unit conversion calculator",
   "scripts": {
     "start": "vite",
     "dev": "vite",
